@@ -200,3 +200,8 @@ plt.ylabel('Validation MCC score')
 plt.legend()
 plt.savefig("enhancer_validation_MCC_score.pdf")
 plt.show()
+
+# Compute the MCC score on the test dataset :
+print(f"MCC score on the test dataset: {trainer.predict(tokenized_datasets_test_enhancers).metrics['test_mcc_score']}")
+# 100%|███████████████████████████████████████████████████████████| 6/6 [00:03<00:00,  1.77it/s]
+# MCC score on the test dataset: 0.3973180415764544
