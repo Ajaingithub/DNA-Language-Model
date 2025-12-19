@@ -1,6 +1,6 @@
 # DNA Language Model: Nucleotide Transformers
 
-Fine-tuning DNA language models (Nucleotide Transformers) for genomic prediction tasks including promoter/enhancer identification, variant effect prediction, and more.
+Pretraining with GPT2, Mistral AI architecture and Fine-tuning DNA language models (Nucleotide Transformers) for genomic prediction tasks including promoter/enhancer identification, variant effect prediction, and more.
 
 ## Overview
 
@@ -35,25 +35,11 @@ Models chromatin accessibility and 3D structure from sequence alone.
 - **Fine-tuning Approach**: Task-specific adaptation with frozen/unfrozen layers
 - **Evaluation Metrics**: AUC, F1-score, correlation for classification/regression tasks
 
-## Repository Structure
-
-```
-DNA-Language-Model/
-├── data/                 # Genomic datasets (FASTA, BED formats)
-├── models/              # Pre-trained and fine-tuned models
-├── notebooks/           # Analysis notebooks
-├── scripts/
-│   ├── preprocess.py   # Sequence preprocessing
-│   ├── finetune.py     # Model fine-tuning pipeline
-│   ├── predict.py      # Inference on new sequences
-│   └── evaluate.py     # Performance metrics
-└── results/            # Predictions and analysis outputs
-```
 
 ## Installation
 
 ```bash
-conda create -n dna-lm python=3.10
+conda create -n torch_gpu python=3.10
 conda activate dna-lm
 pip install torch transformers huggingface-hub biopython pandas numpy
 ```
