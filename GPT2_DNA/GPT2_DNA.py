@@ -261,7 +261,7 @@ train_ids = ids[:split]
 val_ids   = ids[split:]
 
 model.train()
-for steps in range(10000):
+for steps in range(1000):
     x,y = train_loader.nextbatch(train_ids)
     logits,loss = model(x,y)
     optimizer.zero_grad(set_to_none = True)
