@@ -56,7 +56,6 @@ EsmForSequenceClassification(
 from datasets import load_dataset, Dataset
 
 # Load the enhancers dataset from the InstaDeep Hugging Face ressources
-from datasets import load_dataset
 
 # Set the dataset_name to None or 'default' since the prompt is about the config name
 # but 'promoter_all' is actually a value in the 'task' column.
